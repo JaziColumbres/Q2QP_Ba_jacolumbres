@@ -175,7 +175,110 @@ body#wh{
     font-size: 6vh;
     color: #2b3f2c;
 }
+/*end of what page*/
 
+/*start of about page*/
+body#abt{
+    background: linear-gradient(to right,#DEDBD2  0%,#DEDBD2 50%,#B0C4B1 50%,#B0C4B1 100%);
+    overflow-x: hidden;
+}
+
+.cont{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    font-family: cute;
+    left: 4vw;
+    gap: 4vw;
+    text-align: justify;
+    top: 14vh;
+}
+.cont p{
+    word-break: break-all;
+}
+
+.left2{
+    display: inline-flex;
+    flex-direction: column;
+    width: 50vw;
+    gap: 22vh;
+}
+
+.who{
+    color: #6D6753;
+}
+.who p{
+    width: 42vw;
+}
+.who h2{
+    color: #3d392a;;
+}
+
+.help{
+    position: absolute;
+    border: 2px solid #a08072;
+    background-color: #F7E1D7;
+    color: #372016;
+    width: 34vw;
+    padding: 5vh;
+    top: 35vh;
+    height: fit-content;
+}
+
+.right2{
+    width: 50vw;
+}
+
+.vision{
+    position: relative;
+    width: 42vw;
+    color: #466448;
+}
+.vision h2{
+    color: #304b32;
+}
+.mission{
+    position: absolute;
+    background-color: #4A5759;
+    width: 50vw;
+    right: 3.4vw;
+    top: 32vh;
+    height: 60vh;
+    color: #E5F4E0;
+}
+.mission p{
+    position: relative;
+    width: 35vw;
+    left: 4vw;
+    top: 8vh;
+}
+.mission h2{
+    position: relative;
+    left: 8vh;
+    top: 8vh;
+}
+
+#a, #a2, #a3, #a4{
+    font-family: cute2;
+    font-size: 6vh;
+    text-align: left;
+}
+
+.rp{
+    position: absolute;
+    background-image: url(images/red\ panda.png);
+    width: 670px;
+    height: 560px;
+    left: 20vw;
+    transform: scale(0.2);
+    top: 17vw;
+    animation: rprotate 20s infinite;
+}
+@keyframes rprotate{
+    0%{rotate: 0deg;}
+    100%{rotate: 360deg;}
+}
+/*responsive/mobile*/
 @media screen and (max-width: 800px){
     /*navigation bar*/
     .dropd{
@@ -264,6 +367,58 @@ body#wh{
         width: 67vw;
         left: 7vh;
     }
+
+    /*about page*/
+    body#abt{
+        height: 100%;
+        background: linear-gradient(#DEDBD2 93vh, #B0C4B1 34vh);
+    }
+
+    .cont{
+        flex-direction: column;
+        gap: 90vh;
+    }
+
+    .who p{
+        width: 84vw;
+    }
+
+    .help{
+        width: 78vw;
+    }
+
+    .help h2{
+        width: 90vw;
+    }
+    .help p{
+        width: 80vw;
+    }
+
+    .vision{
+        position: relative;
+        width: 80vw;
+    }
+    .mission{
+        position: relative;
+        width: 100vw;
+    }
+
+    .mission h2{
+        text-align: left;
+        position: relative;
+        right: 12vw;
+    }
+    .mission p{
+        position: relative;
+        width: 80vw;
+
+    }
+
+    .rp{
+        position: absolute;
+        top: 205vw;
+    }
+
     .dropdc a:hover {background-color: rgb(247, 215, 215);}
     .dropdown:hover .dropdc {display: block; z-index: 1000;}
     .dropd:hover {background-color: rgba(247, 225, 215, 1)}
